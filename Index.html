@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto para detección de cadmio en plantas</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #eafaf1;
+      color: #2e3d2b;
+      line-height: 1.6;
+    }
+
+    /* Encabezado */
+    header {
+      background: linear-gradient(135deg, #43a047, #1b5e20);
+      color: white;
+      text-align: center;
+      padding: 2.5rem 1rem;
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+      box-shadow: 0 5px 12px rgba(0,0,0,0.25);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+      letter-spacing: 1px;
+    }
+
+    header img {
+      width: 80px;
+      margin-top: 1rem;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 1rem 2rem;
+    }
+
+    section {
+      background: white;
+      border-radius: 20px;
+      padding: 1.8rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    }
+
+    section h2 {
+      color: #2e7d32;
+      border-left: 6px solid #66bb6a;
+      padding-left: 10px;
+      margin-top: 0;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    /* Colores diferenciados por sección */
+    .health { background: #fff3e0; }
+    .genetic { background: #e8f5e9; }
+    .results { background: #f1f8e9; }
+    .ethics { background: #e3f2fd; }
+
+    /* Imagen simbólica */
+    .img-center {
+      display: flex;
+      justify-content: center;
+      margin: 1rem 0;
+    }
+
+    .img-center img {
+      max-width: 220px;
+      border-radius: 10px;
+    }
+
+    /* Botón */
+    .btn {
+      display: inline-block;
+      background: #66bb6a;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #388e3c;
+    }
+
+    footer {
+      text-align: center;
+      background: #1b5e20;
+      color: white;
+      padding: 1.5rem;
+      border-top-left-radius: 50px;
+      border-top-right-radius: 50px;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌱 Proyecto para detección de cadmio en plantas</h1>
+    <img src="https://cdn-icons-png.flaticon.com/512/766/766540.png" alt="Icono Planta">
+  </header>
+
+  <main>
+    <section>
+      <h2>Descripción</h2>
+      <p>
+        Este proyecto busca diseñar un biosensor genético capaz de detectar cadmio (Cd²⁺) en plantas mediante la integración de genes reguladores y reporteros en un plásmido de prueba. 
+        Con ello se pretende avanzar hacia una agricultura más segura y sostenible 🌍.
+      </p>
+    </section>
+
+    <section class="health">
+      <h2>💀 ¿Cómo afecta el cadmio en la salud?</h2>
+      <p>
+        El cadmio es un metal pesado tóxico. Cuando se acumula en las plantas cultivadas en suelos contaminados, puede pasar a los alimentos que consumimos.
+      </p>
+      <ul>
+        <li>Daño a riñones y huesos.</li>
+        <li>Afectación del sistema respiratorio.</li>
+        <li>Acumulación a largo plazo en el organismo.</li>
+        <li>Posible relación con ciertos tipos de cáncer.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>📍 Área de estudio y planteamiento del problema</h2>
+      <p>
+        La contaminación de suelos agrícolas con cadmio es un riesgo ambiental y sanitario creciente. 
+        La detección temprana en plantas es fundamental para reducir la exposición humana y mejorar la seguridad alimentaria.
+      </p>
+    </section>
+
+    <section class="genetic">
+      <h2>🧬 Diseño genético y ensamblaje de partes biológicas</h2>
+      <p>
+        Se utilizó el plásmido <b>pSB2K3</b> como chasis inicial. Los insertos principales fueron:
+      </p>
+      <ul>
+        <li><b>Gen CadR:</b> Regulador de respuesta a metales pesados, sensible al cadmio.</li>
+        <li><b>Gen GFP:</b> Reportero fluorescente verde, visible bajo luz UV o azul.</li>
+      </ul>
+      <p>
+        Cuando el CadR detecta Cd²⁺, activa el promotor que enciende el gen GFP, produciendo fluorescencia verde ✨ como señal de presencia del metal.
+      </p>
+      <div class="img-center">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Plasmid.svg/320px-Plasmid.svg.png" alt="Esquema plásmido">
+      </div>
+    </section>
+
+    <section class="results">
+      <h2>🔬 Resultados esperados</h2>
+      <p>
+        Se espera que las plantas modificadas emitan fluorescencia verde en presencia de cadmio, con una intensidad proporcional a la concentración del metal.
+        Esto permitiría un monitoreo rápido y semi-cuantitativo de suelos y alimentos contaminados.
+      </p>
+    </section>
+
+    <section class="ethics">
+      <h2>⚖️ Impacto ético y social</h2>
+      <p>
+        El proyecto busca contribuir a la seguridad alimentaria, promoviendo un uso responsable de la biología sintética. 
+        Se evita el uso con fines comerciales inapropiados y se alinea con los objetivos de sostenibilidad y salud pública.
+      </p>
+    </section>
+
+    <section>
+      <h2>Contacto</h2>
+      <p>
+        ¿Quieres más información? Escríbenos:
+      </p>
+      <a href="mailto:info@proyecto-cadmio.org" class="btn">Escribir correo</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Proyecto detección de cadmio en plantas 🌱</p>
+  </footer>
+</body>
+</html>
